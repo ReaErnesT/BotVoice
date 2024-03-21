@@ -5,8 +5,8 @@ intents = disnake.Intents.all()
 PREFIX = "!"
 bot = commands.Bot(command_prefix=PREFIX, intents=intents)
 
-# توکن بات خود را اینجا قرار دهید
-token = ""
+# Paste Your Token Bot
+token = "-"
 
 user_voice_channel = {}
 
@@ -31,8 +31,8 @@ async def join (ctx):
 
     vc = await channel.connect()
     embed = disnake.Embed(
-        title='Success ✅  ',
-        description=f"Bot Vard Channel {channel.name} Shod  "
+        title='Success ✅',
+        description=f"Bot Vard Channel {channel.name} Shod",
         color=disnake.Color.green()
     )
     await ctx.send(embed=embed)
